@@ -263,7 +263,6 @@ else
     
 	echo
 	fileName=`echo "$songTitle $artist.mp3"`
-	echo $fileName
 	if [ -s "$fileName" ]
 	then
 		echo "+mp3 already exists, skipping+"

@@ -1,0 +1,51 @@
+++++++++++++++
+GoearBestMatch
+++++++++++++++
+
+This is a Linux Bash script released under GPL v2.0 license. 
+Use it under Terms Of Service of goear.com
+
+This script will download the song we want from goear.com trying
+to find the best match possible, in other words, the right song
+and version of the song.
+
++++++++++++++
+How to use it
++++++++++++++
+
+   ./GoearBestMatch options "songTitle [] Artist"
+
+   OPTIONS:
+      -h      Shows script help
+      -b      Searches for the songtitle and artist together.
+      -n      Searches for the songtitle and uses the artist to improve matching
+              Recommended if -b fails at finding a match
+
+	example: ./GoearBestMatch -b "Pruebalo [] sfdk"
+
+++++++++
+Wrappers
+++++++++
+
+Some of GoearBestMatch filters were developed to improve 
+matching of Dance music. That's why the first wrapper for this script
+is called 51chart.sh
+
+Just put 51chart.sh and GoearBestMatch.sh in the same folder, better if
+we use an empty one. Then execute 51chart:
+./51chart
+
+It will find the 51chart hits from maxima.fm Spanish Dance Radio Station 
+titles and artist of the moment and tell GoearBestMatch to download them.
+
+Please fell free to develop other wrappers and submit them at Github.
+
++++++++
+Contact
++++++++
+This script has been developed by Miguel Araujo Pérez 
+Personal website: http://toThinkOrNotToThink.com
+contact e-mail: muchochini@gmail.com
+You can find the latest version and branches at Github.
+
+Thanks for downloading
